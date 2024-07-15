@@ -1,0 +1,91 @@
+<div class="menuContainer">
+
+    <div class="titleSection">
+        <span>Menu</span>
+    </div>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Variety</th>
+                <th>Price(Rs)</th>
+                
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody class="text-center">
+            <tr *ngFor="let variety of allVarieties">
+                <td>{{variety['Name']}}</td>
+                <td>{{variety['price']}}</td>
+                <!-- <td>{{mobile['ram']}}</td>
+                <td>{{mobile['storage']}}</td> -->
+                <td>
+                    <button class="btn btn-primary"(click)="openForm(variety)">Edit</button>
+                </td>
+                <td>
+                    <button class="btn btn-danger" (click)="deleteVariety(variety['id'])">Delete</button>
+                </td>
+
+            </tr>
+
+        </tbody>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <div class="menuListItems">
+        <div class="card col-6 " style="width: 18rem;">
+            <img src="../../assets/images/plain haleem.jpg" class="card-img-top" alt="Haleem ">
+            <div class="card-body">
+                <h5 class="card-title">{{newList[3].Name}}</h5>
+                
+            </div>
+        </div>
+
+        <div class="card col-6 " style="width: 18rem;">
+            <img src="../../assets/images/special haleem.jpg" class="card-img-top" alt="Special Haleem ">
+            <div class="card-body">
+                <h5 class="card-title">{{newList[2].Name}}</h5>
+                
+            </div>
+        </div>
+    </div>
+    <div class="menuListItems ">
+        <div class="card col-6 " style="width: 18rem;">
+            <img src="../../assets/images/haleem 65.jpg" class="card-img-top" alt="Haleem 65">
+            <div class="card-body">
+                <h5 class="card-title">{{newList[0].Name}}</h5>
+               
+            </div>
+        </div>
+
+        <div class="card col-6 " style="width: 18rem;">
+            <img src="../../assets/images/Nalli haleem.jpg" class="card-img-top" alt="Nalli Haleem ">
+            <div class="card-body">
+                <h5 class="card-title">{{newList[1].Name}}</h5>
+            </div>
+        </div>
+    </div> -->
+
+
+
+
+</div>
